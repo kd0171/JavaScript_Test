@@ -1,10 +1,46 @@
+
+/* headerの背景色を#f7f2b4、高さを90pxにしてください */
+.header{
+  background-color:#f7f2b4;
+  height:90px;
+  padding-bottom:30px;
+}
+
+/* mainの背景色を#bdf7f1、高さを600pxにしてください */
+.main{
+  background-color:#bdf7f1;
+  height:600px;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:70px;
+  padding-right:70px;
+}
+
+
+
+/* footerの背景色を#ceccf3、高さを270pxにしてください */
+.footer{
+  background-color:#ceccf3;
+  height:270px;
+  padding-top:60px;
+}
+
 h1 {
   color: #ff0000;
   /* 文字の大きさを40pxにしてください */
-  font-size:40px;
+  font-size:20px;
   
   /* 文字の種類をserifにしてください */
   font-family:serif;
+
+  /* 背景の色を#f3f372にしてください */
+  background-color:#f3f372;
+  
+  /* 高さを80pxにしてください */
+  height:80px;
+  
+  /* 幅を400pxにしてください */
+  width:400px;
   
 }
 
@@ -16,4 +52,57 @@ p {
   /* 文字の種類を"Lucida Grande"にしてください */
   font-family:"Lucida Grande";
   
+}
+
+img {
+  /* 高さを200pxにしてください */
+    height:200px;
+  
+  /* 幅を280pxにしてください */
+  
+    width:280px;
+    margin:140px 20px 80px 20px; /* top right bottom left*/
+}
+
+.li-left{
+  float:left;
+}
+
+.li-left span{
+  color:#ff0000;
+}
+
+.li-right{
+  float:right;
+}
+
+
+li {
+  color: #444;
+}
+
+/* selectedの文字の色を#ff0000にしてください */
+.selected li{
+  color:#ff0000;
+  float:left;   /* floatプロパティを用いることで、指定した要素を横並びにすることができます。*/
+}
+
+.no-point{
+  list-style: none;   /*　リスト要素の黒点を取り除く　*/
+  
+}
+
+.section-title{
+  border-bottom:20px solid #dee7ec;
+  margin-bottom:40px;
+}
+
+input, textarea{    /*複数の要素を指定可能*/
+  width:400px;
+  border: 1px solid red;
+}
+
+.oneline-submit{
+  background-color:#6b6a6a;
+  color:rgb(235, 235, 235);
 }

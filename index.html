@@ -1,24 +1,54 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">    <!-- CSSの読み込みにはこれが必要　-->
+        <link rel="stylesheet" href="style.css">   
+         <!-- 
+            CSSの読み込みにはこれが必要　
+            HTMLからCSSを読み込むためには、<link rel="stylesheet">を用います。
+            <link rel="stylesheet" href="stylesheet.css">のように、href属性で読み込むCSSファイルを指定
+        -->
+        <title> Test JS</title>    <!-- <title>要素で指定されたタイトルは、ブラウザのタブ上に現れます。 -->
     </head>
     <body>
-        <h1> Hello HTML!</h1>    <!--  -->
-        <p> 段落 </p>
-        <!-- <a ref="https....com"> リンクを貼れる </a> -->
-        <!-- <img src="https....com"> 写真のリンクを貼れる-->
-        <a> リンクを作る </a>
-        <ul>
-            <li>点項目A</li>
-            <li>点項目B</li>
-            <li>点項目C</li>
-        </ul>
-        <ol>
-            <li>数字項目1</li>
-            <li>数字項目2</li>
-            <li>数字項目3</li>
-        </ol>
+        <div class="header">
+            <h1> Hello HTML!</h1>    <!--  -->
+        </div>
+        <div class="main">
+            <p> 段落 </p>
+            <!-- <a ref="https....com"> リンクを貼れる </a> -->
+            <!-- <img src="https....com"> 写真のリンクを貼れる-->
+            <h3 class="section-title"> インライン要素もクラス化可能 </h3>
+            <a> リンクを作る </a>
+            <img src="https://prog-8.com/images/html/beginner/school.jpg">  
+            
+            <div class="li-left">
+            <ul>
+                <li class="selected">点<span>項目</span>A</li> 　　<!-- <span>で囲んだところのみ指定可能-->
+                <li class="no-point">点項目B</li>
+                <li class="selected">点<span>項目</span>C</li>
+            </ul>
+            </div>
+            <div class="li-right">
+            <ol>
+                <li>数字項目1</li>
+                <li class="selected">数字項目2</li>
+                <li class="no-point">数字項目3</li>
+            </ol>
+            </div>
+        </div>
+        <div class="footer">
+            <form>
+                <p>一行用テキストエリア</p>
+                <input>
+                <p>内容を確認してね</p>
+                <input class="oneline-submit" type="submit" value="一行送信">
 
+                <p>複数行用テキストエリア</p> <!-- <p>は改行要素　-->
+                <textarea></textarea>
+                <p>内容を確認してね</p>
+                <input type="submit" value="複数行送信">
+
+            </form>
+        </div>
     </body>
 </html>
