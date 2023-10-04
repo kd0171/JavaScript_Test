@@ -125,7 +125,7 @@ header {
 
 /* header-rightの中の<a>のCSSを指定してください */
 .header-right a{
-    line-height :65px;
+    line-height :65px;      /*高さの中央揃えにはブロック要素と行の高さを揃える*/
     padding-left:25px;
     padding-right:25px;
     color:white;
@@ -172,7 +172,7 @@ header {
   /* lesson-iconの中の<p>のCSSを指定してください */
   .lesson-icon p{
     position:absolute;
-    top:90px;
+    top:75px;
     width:100%;
     color:white;
   }
@@ -185,3 +185,58 @@ header {
     font-size:12px;
     color:#b3aeb5;
   }
+
+
+/* messageのCSSを指定してください */
+.message{
+    background-color:#5dca88;
+    padding:15px 40px;
+  }
+  
+  
+  /* headingの中の<h3>のCSSを指定してください */
+  .heading h3{
+    font-weight:normal;
+  }
+  
+
+
+/* message-wrapperクラスのCSSを指定してください */
+.message-wrapper{
+    border-bottom:1px solid #eee;
+    padding-bottom:80px;
+    text-align:center;
+  }
+  
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    /* カーソルの形をpointerにしてください */
+    cursor:pointer;
+        /*
+        タグによってcursorが初期状態で設定されているものもあり、例えば<a>タグは初期状態でpointerが設定されています。
+        */
+
+    /* box-shadowをつけてください */
+    box-shadow:0px 7px #1a7940;
+        /*  
+        ボックスに影を付けるためにはbox-shadowプロパティを用います。
+        以下の図のように「影の位置」と「影の色」を指定します。
+        水平　垂直　色
+        */    
+
+    
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+
+
+
+
+/*
+セレクタにactiveを用いることで、要素がクリックされている間だけCSSを適用することができます。
+*/
