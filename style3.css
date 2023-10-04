@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+/* clearクラスにfloatを解除するためのCSSを記述してください */
+.clear{
+  clear:left;
+}
+
 .container {
   /* widthを100%にしてください */
   width: 100%;
@@ -112,7 +117,7 @@ header {
 }
 
 .lesson-wrapper {
-  height: 580px;
+ /* height: 580px;  */
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -218,3 +223,6 @@ viewportを設定しないと、スマートフォンやタブレットでの閲
 画面幅によって全体のwidthが変わるように、width: 100%;に変更しましょう。
 */
 
+/*
+このresponsive.cssを読み込む際には、必ずviewportよりも下の行に記述するようにしましょう。
+*/
