@@ -1,0 +1,29 @@
+
+h1 {
+    color: red;
+  }
+  
+  /* ブレイクポイントをmax-width: 1000pxに指定してください */
+  @media (max-width: 1000px ) {
+    /* h1のcolorをblueに指定してください */
+    h1{
+      color:blue;
+    }
+    
+  }
+  
+  /* ブレイクポイントをmax-width: 670pxに指定してください */
+  @media (max-width: 670px ) {
+    /* h1のcolorをgreenに指定してください */
+    h1{
+      color:green;
+    }
+    
+  }
+
+
+/*
+メディアクエリは、@media (条件) { .... }という様に書きます。
+指定された条件が当てはまるときにのみ{ }内のCSSが適用されます。
+メディアクエリの条件には、max-width(最大幅)、またはmin-width(最小幅)を指定できます。
+*/
