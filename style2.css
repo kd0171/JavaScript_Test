@@ -97,7 +97,18 @@ header {
     height: 65px;
     width: 100%;
     background-color: rgba(34, 49, 52, 0.9);
+    /* positionプロパティをfixedに、topを0に指定してください */
+    position:fixed;
+    top:0;
+    /* z-indexを10に指定してください */
+    z-index:10;
   }
+    /*
+        z-indexプロパティは、要素の重なりの順序を指定する際に使用します。
+        z-indexは整数値で指定し、値が大きいほど上に表示されます。
+        z-indexプロパティは必ずpositionプロパティと併用する必要があるので、注意しましょう。
+    */
+
   
   
 /* logoクラスのCSSを指定してください */
@@ -235,8 +246,33 @@ header {
   
 
 
+/* messageクラスがクリックされているときのCSSを指定してください */
+.message:active{
+    box-shadow:none;
+    position:relative;
+    top:7px;
+  }
+    /*
+    セレクタにactiveを用いることで、要素がクリックされている間だけCSSを適用することができます。
+    */
 
 
-/*
-セレクタにactiveを用いることで、要素がクリックされている間だけCSSを適用することができます。
-*/
+/* <footer>の中の<img>のCSSを指定してください */
+footer img{
+    width:125px;  
+  }
+  
+  
+  /* <footer>の中の<p>のCSSを指定してください */
+  footer p{
+    color:#b3aeb5;
+    font-size:12px;
+  }
+  
+  
+  /* <footer>のCSSを指定してください */
+  footer{
+    padding-top:30px;
+  }
+  
+  
