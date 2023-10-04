@@ -1,3 +1,8 @@
+/* すべての要素に対して box-sizing: border-box; を指定してください */
+*{
+  box-sizing:border-box;
+}
+
 .container {
   margin: 20px;
 }
@@ -5,7 +10,11 @@
 .item {
   width: 25%;
   float: left;
+  /* 左右にpaddingを15pxずつ追加してください */
+  padding:0 15px;
+  
 }
+
 
 .item-box {
   height: 100px;
@@ -53,3 +62,18 @@
 指定された条件が当てはまるときにのみ{ }内のCSSが適用されます。
 メディアクエリの条件には、max-width(最大幅)、またはmin-width(最小幅)を指定できます。
 */
+
+/*
+box-sizingをborder-boxに指定すると、要素の幅(width)の合計にpaddingとborderが含まれるようになります。
+そのため、paddingやborderを追加した時に生じるレイアウト崩れを未然に防ぐことができます
+（※ただし、marginはborder-boxでの合計値に含まれません）。
+*/
+
+/*
+*はすべての要素に対してCSSを適用したい場合に用います。
+border-boxをすべての要素に対して適用することで、レイアウトを管理しやすくなります。
+*/
+
+
+
+
