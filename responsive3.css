@@ -48,7 +48,22 @@
         text-align:left;
         padding-top:130px;
     }
+        
+    /* header-rightクラスのdisplayをnoneに指定してください */
+    .header-right{
+        display:none;
+    }
+    
+    /* menu-iconクラスのdisplayをblockに指定してください  */
+    .menu-icon{
+        display:block;
+    }
 
+    /*
+        メニューアイコンはデフォルトでは非表示にし、画面幅が670px以下（スマートフォンサイズ）の時にのみ表示されるようにします。
+        要素を非表示にするにはdisplay: none;を用います。
+        非表示にした要素を表示させる時は、display: block;を用いて表示します。
+    */
 
     /* 「.top-wrapper h1」のfont-sizeを24pxに指定 */
     .top-wrapper h1{
