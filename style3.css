@@ -74,6 +74,14 @@ box-sizingをborder-boxに指定すると、要素の幅(width)の合計にpaddi
 border-boxをすべての要素に対して適用することで、レイアウトを管理しやすくなります。
 */
 
+/*
+レスポンシブデザインを適用する準備として、<head>タグ内にviewportを設定しましょう。
+viewportを設定しないと、スマートフォンやタブレットでの閲覧時にメディアクエリが正しく機能しません。
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*/
 
 
+/*
+画面幅によって全体のwidthが変わるように、width: 100%;に変更しましょう。
+*/
 
