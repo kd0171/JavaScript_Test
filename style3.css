@@ -17,6 +17,14 @@ a {
 }
 
 .container {
+  /* max-widthを1170pxに指定してください */
+  max-width:1170px;
+
+        /*
+        container要素のwidthが100%なので、画面幅が2000pxなどとても大きい時も画面いっぱいに広がってしまいます。
+        max-width: ◯◯px;と指定すると、画面幅を拡大しても、要素の幅の上限が◯◯pxとなります。
+        */
+
   /* widthを100%にしてください */
   width: 100%;
   padding: 0 15px;
