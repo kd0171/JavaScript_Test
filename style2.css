@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* containerクラスのCSSを指定してください */
+  .container{
+    width:1170px;
+    padding:15px;
+    margin:0 auto;  /*左右のマージンを自動調整して中心に寄せる*/
+  }
+  
+  
+  /* top-wrapperクラスのCSSを指定してください */
+  .top-wrapper{
+    padding-top:180px;
+    padding-bottom:100px;
+    background-image:url(https://prog-8.com/images/html/advanced/top.png);  /*背景画像の設定*/
+    color:white;
+    background-size:cover; /*背景画像が繰り返されないように最大化する*/
+      /* text-alignをcenterに指定してください */
+    text-align:center;
+         /*
+        margin: 0 autoはブロック要素
+        text-align: centerはインライン（ブロック）要素
+        */
+
+  }
+  
+  /* top-wrapperの中の<h1>のCSSを指定してください */
+.top-wrapper h1{
+    opacity:0.7;    /*透明度*/
+    font-size:45px;
+    letter-spacing:5px;     /*文字間隔*/
+  }
+  
+  
+  /* top-wrapperの中の<p>のCSSを指定してください */
+  .top-wrapper p{
+    opacity:0.7;
+  }
+  
+
+  /* btnクラスのCSSを指定してください */
+.btn{
+    padding:8px 24px;
+    color:white;
+    display:inline-block;       /*ブロック要素、インラインブロック要素、インライン要素でサイズの変更可否等の違いがある*/
+    opacity:0.8; 
+     /* border-radiusを4pxに指定してください */
+    border-radius:4px;
+  }
+
+  /* btnクラスにhoverしたときのCSSを指定してください */
+.btn:hover{
+    opacity:1;
+  }
+  
+  /* signupクラスのCSSを指定してください */
+  .signup{
+   background-color:#239b76;
+  }
+  
+  
+  /* facebookクラスのCSSを指定してください */
+  .facebook{
+    background-color:#3b5998;
+    margin-right:10px;
+  }
+  
+  
+  /* twitterクラスのCSSを指定してください */
+  .twitter{
+    background-color:#55acee;
+  }
+  
+  
+  /* btn-wrapperクラスのCSSを指定してください */
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+
+
+/* faクラスのmargin-rightを5pxに指定してください */
+.fa{
+    margin: right 5px;;
+  }
+  
+
+
+/* <header>のCSSを指定してください */
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+  }
+  
+  
+/* logoクラスのCSSを指定してください */
+.logo{
+    width:124px;
+    margin-top:20px;
+}
+
+
+.header-left {
+    float: left;
+}
+
+
+.header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* transitionを指定してください */
+    transition:all 0.5s;
+}
+
+.header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* header-rightの中の<a>のCSSを指定してください */
+.header-right a{
+    line-height :65px;
+    padding-left:25px;
+    padding-right:25px;
+    color:white;
+    display:block;
+}
+  
+
+/* lesson-wrapperクラスのCSSを指定してください */
+.lesson-wrapper{
+    height:500px;
+    padding-bottom:80px;
+    background-color:#f7f7f7;
+  }
+  
+  
+  /* headingクラスのCSSを指定してください */
+  .heading{
+    padding:60px 0 30px 0 ;
+    color:#5f5d60;
+  }
+  
+  
+  /* headingの中の<h2>のCSSを指定してください */
+  .heading h2{
+    font-weight:normal;     /*<h1>~<h6>の要素は初期状態でfont-weight: bold;となっている*/
+  }
+  
