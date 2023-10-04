@@ -138,6 +138,8 @@ header {
     height:500px;
     padding-bottom:80px;
     background-color:#f7f7f7;
+         /* text-alignをcenterに指定してください */
+    text-align:center;
   }
   
   
@@ -153,3 +155,33 @@ header {
     font-weight:normal;     /*<h1>~<h6>の要素は初期状態でfont-weight: bold;となっている*/
   }
   
+
+/* lessonクラスのCSSを指定してください */
+.lesson{
+    float:left;
+    width:25%;
+  }
+  
+
+
+/* lesson-iconクラスのCSSを指定してください */
+.lesson-icon{
+    position:relative;   /*基準としたい親要素にposition: relative;と指定すると、その要素の左上部分が基準位置となります。*/
+  }
+  
+  /* lesson-iconの中の<p>のCSSを指定してください */
+  .lesson-icon p{
+    position:absolute;
+    top:90px;
+    width:100%;
+    color:white;
+  }
+  
+  /* txt-contentsクラスのCSSを指定してください */
+  .txt-contents{
+    width:80%;
+    display:inline-block;
+    margin:20px;
+    font-size:12px;
+    color:#b3aeb5;
+  }
