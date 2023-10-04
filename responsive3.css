@@ -7,8 +7,17 @@
       width:50%;
       margin-bottom:50px;
     }
+        /* 「.top-wrapper h1」のfont-sizeを32pxに指定 */
+    .top-wrapper h1{
+        font-size:32px;
+    }
     
-  }
+    /* 「.heading h2」のfont-sizeを20pxに指定 */
+    .heading h2{
+        font-size:20px;
+    }
+    
+}
 
   /* スマホ向けレイアウト */
 
@@ -39,6 +48,23 @@
         text-align:left;
         padding-top:130px;
     }
+
+
+    /* 「.top-wrapper h1」のfont-sizeを24pxに指定 */
+    .top-wrapper h1{
+        font-size:24px;
+    }
+    
+    /* 「.top-wrapper p」のfont-sizeを14pxに指定 */
+    .top-wrapper p{
+        font-size:14px;
+    }
+
+        /*
+            画面幅が小さいときは、フォントサイズを小さくしたほうが読みやすくなります。
+            画面幅によって、フォントサイズを調整していきましょう。
+        */
+}
 
 }
   }
