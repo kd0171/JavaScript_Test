@@ -179,8 +179,36 @@ if(age>=20&&age<30){
   console.log("私は20代です");
 }
 
+        /*
+            信号機の色を表す定数colorの値によって処理を分岐したい、という例です。
+            このように、ある値によって処理を分岐する場合にswitch文を用いることができます。
+        */
 
+        /*
+            switch文の中にcaseを追加することで処理を分けることができます。
+            右の図では、定数colorの値が「赤」であるときに「ストップ！」という文字列が出力されるようになっています。
+        */
 
-            
+const rank = 2;
+
+switch (rank) {
+    case 1:         //caseの後はダブルコロンであることに注意
+    console.log("金メダルです！");
+    break;
+
+    // rankの値が2のcaseを追加してください
+    case 2:
+    console.log("銀メダルです！");
+    break;
+    // rankの値が3のcaseを追加してください
+    case 3:
+    console.log("銅メダルです！");
+    break;
+    // defaultの処理を追加してください
+    default:
+    console.log("メダルはありません");
+    break;
+  
+}
 
 
