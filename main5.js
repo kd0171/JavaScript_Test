@@ -33,6 +33,33 @@ for(let number = 1; number<=100; number++){
   
 
 
+// for文を完成させてください
+for (let number = 1; number <= 100; number++) {
+    // if文を用いて、numberが3の倍数の時に「3の倍数です」、そうでないときは数字を出力してください
+    if (number % 3 === 0) {
+      console.log("3の倍数です");
+    } else {
+      console.log(number);
+    }
+  }
+
+// 定数animalsに、指定された配列を代入してください
+const animals = ["dog","cat","sheep"];
+    //配列名は複数形にする
+
+// 定数animalsを出力して下さい
+console.log(animals);
+  
+
+const animals = ["dog", "cat", "sheep"];
+
+// 配列の1つ目の要素を出力してください
+console.log(animals[0]);
+
+// 配列の3つ目の要素を出力してください
+console.log(animals[2]);
+
+
 
 
 
