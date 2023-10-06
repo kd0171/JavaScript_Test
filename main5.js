@@ -87,6 +87,10 @@ for (let i = 0; i < animals.length; i++) {
   console.log(animals[i]);
 }
 
+// 定数characterを定義し、指定されたオブジェクトを代入してください
+const character ={name:"にんじゃわんこ",age:14};
 
+// characterの値を出力してください
+console.log(character);
 
 
