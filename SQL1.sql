@@ -64,3 +64,69 @@ Where price is null;
 SELECT *
 FROM purchases
 where price is not null;
+
+-- 「FROM purchases」のあとにコードを追加し、categoryカラムが「食費」かつcharacter_nameカラムが「ひつじ仙人」であるデータを取得してください
+
+SELECT *
+FROM purchases
+where category = "食費"
+and character_name = "ひつじ仙人";
+
+
+-- 「FROM purchases」のあとにコードを追加し、categoryカラムが「食費」またはcharacter_nameカラムが「にんじゃわんこ」であるデータを取得してください
+
+SELECT *
+FROM purchases
+where category = "食費"
+or character_name = "にんじゃわんこ";
+
+/*
+SQLでは
+「昇順」は「ASC」(1,2,3,4....)、
+「降順」は「DESC」(100,99,98,97...)
+と指定します。
+*/
+
+-- 「FROM purchases」のあとにコードを追加し、priceカラムを基準に降順に並び替えたデータを取得してください
+
+SELECT *
+FROM purchases
+order by price desc;
+
+
+/*
+LIMITはクエリの末尾に記述することで、取得するデータの数を制限します。
+*/
+
+-- 「WHERE character_name = "にんじゃわんこ"」のあとにコードを追加し、取得結果が「最大10件」となるようにデータを取得してください。
+
+SELECT *
+FROM purchases
+WHERE character_name = "にんじゃわんこ"
+limit 10;
+
+-- 「FROM purchases」のあとにコードを追加し、priceカラムを基準に「降順に並び替えた」データを、最大で「5件」取得してください
+
+SELECT *
+FROM purchases
+order by price desc
+limit 5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
