@@ -109,8 +109,56 @@ JOIN teams
 ON players.previous_team_id = teams.id
 ;
 
-/*
-LEFT JOINを使うことで、FROMで指定したテーブルのレコードを全て取得します。
-外部キーがNULLのレコードもNULLのまま実行結果に表示されます。
-*/
+        /*
+        LEFT JOINを使うことで、FROMで指定したテーブルのレコードを全て取得します。
+        外部キーがNULLのレコードもNULLのまま実行結果に表示されます。
+        */
+
+SELECT *
+FROM players
+LEFT JOIN teams
+ON players.previous_team_id = teams.id
+;
+
+
+SELECT players.name AS "選手名", teams.name AS "前年所属していたチーム"
+FROM players
+LEFT JOIN teams
+ON players.previous_team_id = teams.id
+;
+
+        /*
+        最後にLEFT JOINと書けばNULLも含めた表になるので、毎回は不要（？）
+        */
+SELECT *
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+LEFT JOIN teams
+ON players.previous_team_id = teams.id
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
