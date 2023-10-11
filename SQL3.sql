@@ -44,17 +44,73 @@ FROM players
 ;
 
 
+SELECT *
+FROM countries
+WHERE rank < (
+  SELECT rank
+  FROM countries
+  WHERE name = "日本"
+)
+;
+
+
+SELECT SUM(goals),country_id
+FROM players
+GROUP BY country_id
+;
+
+
+
+/*
+JOINは複数のテーブルを1つに結合したいときに使います。
+ONで条件を指定して、テーブルAにテーブルBを結合します。
+結合したテーブルは1つのテーブルとしてデータを取得することができます。
+結合条件は、「ON テーブル名.カラム名 = テーブル名.カラム名」で指定
+図のようなJOINを含んだクエリでは、はじめにJOINが実行されます。その次に、結合されたテーブルに対してSELECTが実行されます。
+*/
+
+
+SELECT *
+FROM players
+--結合するテーブル名を追加してください
+JOIN countries
+--結合条件を追加してください
+ON players.country_id = countries.id
+;
+
+
+SELECT players.name, countries.name
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+;
+
+SELECT countries.name,SUM(goals)
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+GROUP BY countries.name
+;
+
+
+
+SELECT *
+FROM players
+JOIN teams
+ON players.previous_team_id = teams.id
+;
 
 
 
 
+SELECT players.name AS "選手名", teams.name AS "前年所属していたチーム"
+FROM players
+JOIN teams
+ON players.previous_team_id = teams.id
+;
 
-
-
-
-
-
-
-
-
+/*
+LEFT JOINを使うことで、FROMで指定したテーブルのレコードを全て取得します。
+外部キーがNULLのレコードもNULLのまま実行結果に表示されます。
+*/
 
